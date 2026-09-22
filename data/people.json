@@ -1,0 +1,300 @@
+{
+  "_comment": "INTERN. Stammliste gemaess fotografierter Ministrantenliste (Prompt Abschnitt 1.1). Reihenfolge wie im Foto. Diese Datei wird NICHT veroeffentlicht.",
+  "source": {
+    "file": "input/ministrantenliste-IMG_7123.jpg",
+    "status": "Foto liegt vor und wurde mit der Transkription in Abschnitt 1.1 des Auftrags abgeglichen: 38 Namen, identische Reihenfolge und Schreibweisen. Darstellung im Foto Nachname Vorname, hier Vorname Nachname.",
+    "verifiedOn": "2026-09-22"
+  },
+  "people": [
+    {
+      "id": "p01",
+      "firstName": "Annalena",
+      "lastName": "Bereuter",
+      "display": "Annalena B."
+    },
+    {
+      "id": "p02",
+      "firstName": "Lara",
+      "lastName": "Bereuter",
+      "display": "Lara B."
+    },
+    {
+      "id": "p03",
+      "firstName": "Zita",
+      "lastName": "Bergmayer",
+      "display": "Zita B."
+    },
+    {
+      "id": "p04",
+      "firstName": "Greta",
+      "lastName": "Berlinger",
+      "display": "Greta B."
+    },
+    {
+      "id": "p05",
+      "firstName": "Felix",
+      "lastName": "Brunner",
+      "display": "Felix B."
+    },
+    {
+      "id": "p06",
+      "firstName": "Magnus",
+      "lastName": "Brunner",
+      "display": "Magnus B."
+    },
+    {
+      "id": "p07",
+      "firstName": "Lena",
+      "lastName": "Buchauer",
+      "display": "Lena B."
+    },
+    {
+      "id": "p08",
+      "firstName": "Lukas",
+      "lastName": "Buchauer",
+      "display": "Lukas B."
+    },
+    {
+      "id": "p09",
+      "firstName": "Christina",
+      "lastName": "Cukrowicz",
+      "display": "Christina C."
+    },
+    {
+      "id": "p10",
+      "firstName": "Paulus",
+      "lastName": "Cukrowicz",
+      "display": "Paulus C."
+    },
+    {
+      "id": "p11",
+      "firstName": "Vincent",
+      "lastName": "Dressel",
+      "display": "Vincent D."
+    },
+    {
+      "id": "p12",
+      "firstName": "Josef",
+      "lastName": "Eder",
+      "display": "Josef E."
+    },
+    {
+      "id": "p13",
+      "firstName": "Klara",
+      "lastName": "Einsle",
+      "display": "Klara E."
+    },
+    {
+      "id": "p14",
+      "firstName": "Martha",
+      "lastName": "Einsle",
+      "display": "Martha E."
+    },
+    {
+      "id": "p15",
+      "firstName": "Elisa",
+      "lastName": "Erath",
+      "display": "Elisa E."
+    },
+    {
+      "id": "p16",
+      "firstName": "Simon Johannes",
+      "lastName": "Ernst",
+      "display": "Simon Johannes E."
+    },
+    {
+      "id": "p17",
+      "firstName": "Olivia",
+      "lastName": "Eze",
+      "display": "Olivia E."
+    },
+    {
+      "id": "p18",
+      "firstName": "Lukas",
+      "lastName": "Keiler",
+      "display": "Lukas K."
+    },
+    {
+      "id": "p19",
+      "firstName": "Emma",
+      "lastName": "Konzett",
+      "display": "Emma K."
+    },
+    {
+      "id": "p20",
+      "firstName": "Clara",
+      "lastName": "Konzett",
+      "display": "Clara K."
+    },
+    {
+      "id": "p21",
+      "firstName": "Loana",
+      "lastName": "Kramer",
+      "display": "Loana K."
+    },
+    {
+      "id": "p22",
+      "firstName": "Nora",
+      "lastName": "Kramer",
+      "display": "Nora K."
+    },
+    {
+      "id": "p23",
+      "firstName": "Anna-Catharina",
+      "lastName": "Meusburger",
+      "display": "Anna-Catharina M."
+    },
+    {
+      "id": "p24",
+      "firstName": "Magdalena",
+      "lastName": "Müller-Rupp",
+      "display": "Magdalena M."
+    },
+    {
+      "id": "p25",
+      "firstName": "Emma",
+      "lastName": "Ocvirk",
+      "display": "Emma O."
+    },
+    {
+      "id": "p26",
+      "firstName": "Katharina",
+      "lastName": "Ocvirk",
+      "display": "Katharina O."
+    },
+    {
+      "id": "p27",
+      "firstName": "Ella",
+      "lastName": "Ottersbach",
+      "display": "Ella O."
+    },
+    {
+      "id": "p28",
+      "firstName": "Marie",
+      "lastName": "Ottersbach",
+      "display": "Marie O."
+    },
+    {
+      "id": "p29",
+      "firstName": "Anna",
+      "lastName": "Pfefferkorn",
+      "display": "Anna P."
+    },
+    {
+      "id": "p30",
+      "firstName": "Jakob",
+      "lastName": "Redl",
+      "display": "Jakob R."
+    },
+    {
+      "id": "p31",
+      "firstName": "Remus",
+      "lastName": "Scharinger",
+      "display": "Remus S."
+    },
+    {
+      "id": "p32",
+      "firstName": "Emilia",
+      "lastName": "Schmidgall",
+      "display": "Emilia S."
+    },
+    {
+      "id": "p33",
+      "firstName": "Marlena",
+      "lastName": "Schmidgall",
+      "display": "Marlena S."
+    },
+    {
+      "id": "p34",
+      "firstName": "Ida",
+      "lastName": "Seitner",
+      "display": "Ida S."
+    },
+    {
+      "id": "p35",
+      "firstName": "Ferdinand",
+      "lastName": "Sillaber",
+      "display": "Ferdinand S."
+    },
+    {
+      "id": "p36",
+      "firstName": "Vanessa",
+      "lastName": "Volkmann",
+      "display": "Vanessa V."
+    },
+    {
+      "id": "p37",
+      "firstName": "Henriette",
+      "lastName": "Wöß",
+      "display": "Henriette W."
+    },
+    {
+      "id": "p38",
+      "firstName": "Matilda",
+      "lastName": "Wöß",
+      "display": "Matilda W."
+    }
+  ],
+  "aliases": [
+    {
+      "variant": "Beureuter",
+      "resolvedTo": "Bereuter",
+      "note": "Sprachabschrift, Abschnitt 1.1"
+    },
+    {
+      "variant": "Konzet",
+      "resolvedTo": "Konzett",
+      "note": "Sprachabschrift, Abschnitt 1.1"
+    },
+    {
+      "variant": "Schmidkal / Schmidtgal",
+      "resolvedTo": "Schmidgall",
+      "note": "Sprachabschrift, Abschnitt 1.1"
+    },
+    {
+      "variant": "Müller-Rub",
+      "resolvedTo": "Müller-Rupp",
+      "note": "Sprachabschrift, Abschnitt 1.1"
+    },
+    {
+      "variant": "Mathilde Wöß",
+      "resolvedTo": "p38",
+      "note": "Schreibvariante Matilda"
+    },
+    {
+      "variant": "Zitterberg, Maya",
+      "resolvedTo": "p03",
+      "note": "geklaert: Zita Bergmayer; KEINE zusaetzliche Person"
+    },
+    {
+      "variant": "Bergmaier Zita",
+      "resolvedTo": "p03",
+      "note": "Schreibvariante im E-Mail-Verteiler"
+    },
+    {
+      "variant": "Christina Djokovic",
+      "resolvedTo": "p09",
+      "note": "geklaert: Christina Cukrowicz"
+    },
+    {
+      "variant": "Ese Olivia",
+      "resolvedTo": "p17",
+      "note": "geklaert: Olivia Eze"
+    },
+    {
+      "variant": "Simon Ernst",
+      "resolvedTo": "p16",
+      "note": "geklaert: Simon Johannes Ernst"
+    },
+    {
+      "variant": "Rupp Magdalena",
+      "resolvedTo": "p24",
+      "note": "Verteiler-Schreibweise"
+    },
+    {
+      "variant": "Meusburger Anna-Katharina",
+      "resolvedTo": "p23",
+      "note": "Verteiler-Schreibweise"
+    }
+  ]
+}

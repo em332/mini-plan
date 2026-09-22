@@ -1,0 +1,153 @@
+/* Ministrantenplan Oktober 2026 - ruhige, gut lesbare Darstellung. */
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #10243e;
+  --muted: #4c6179;
+  --accent: #0e6a74;
+  --accent-soft: #e4f0f1;
+  --accent-line: #b9d8db;
+  --border: #dae3ec;
+  --mark-bg: #fff2cc;
+  --mark-line: #b8860b;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; }
+
+/* ---------- Kopf ---------- */
+.page-header { margin-bottom: 28px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+.subtitle { margin: 0 0 14px; font-size: 1.05rem; color: var(--muted); }
+
+.meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 20px; }
+.badge {
+  display: inline-block; padding: 4px 11px; border-radius: 999px;
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em;
+  background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-line);
+}
+.badge--draft { background: #fdf3e3; color: #8a5a00; border-color: #e6cf9f; }
+
+.notice {
+  display: flex; gap: 12px; align-items: flex-start;
+  border: 1px solid var(--accent-line); border-left: 5px solid var(--accent);
+  background: var(--accent-soft); color: var(--text);
+  border-radius: var(--radius); padding: 14px 18px; margin: 0 0 28px;
+  font-weight: 600;
+}
+.notice .notice-icon { font-size: 1.1rem; line-height: 1.4; }
+
+/* ---------- Filter ---------- */
+.filter {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px; margin-bottom: 30px;
+}
+.filter h2 { margin: 0 0 14px; font-size: 1.05rem; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; }
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 220px; flex: 1 1 220px; }
+.field label { font-size: 0.9rem; font-weight: 600; }
+input[type="search"], select {
+  font: inherit; color: var(--text); background: #fff;
+  border: 1px solid #9fb2c6; border-radius: 9px; padding: 11px 12px; min-height: 46px; width: 100%;
+}
+button {
+  font: inherit; font-weight: 600; cursor: pointer; min-height: 46px;
+  padding: 11px 18px; border-radius: 9px;
+  border: 1px solid var(--accent); background: var(--accent); color: #fff;
+}
+button.secondary { background: #fff; color: var(--accent); }
+button:hover { filter: brightness(1.08); }
+:focus-visible { outline: 3px solid #b8860b; outline-offset: 2px; }
+
+.filter-status { margin: 14px 0 0; font-size: 0.95rem; color: var(--muted); }
+.filter-status strong { color: var(--text); }
+.filter-status.is-empty { color: #8a3a00; font-weight: 600; }
+
+/* ---------- Plan ---------- */
+.day { margin: 0 0 30px; }
+.day > h2 {
+  font-size: 1.18rem; margin: 0 0 12px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent-line);
+}
+.day-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+.mass {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 20px; break-inside: avoid;
+}
+.mass-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 4px; }
+.mass h3 { margin: 0; font-size: 1.02rem; }
+.mass .time { font-variant-numeric: tabular-nums; }
+.mass .count { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
+
+.servers { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 7px; }
+.servers li {
+  background: #f1f5f9; border: 1px solid var(--border); border-radius: 8px;
+  padding: 5px 11px; font-size: 0.95rem;
+  overflow-wrap: anywhere; word-break: break-word;
+}
+.servers li.is-match {
+  background: var(--mark-bg); border-color: var(--mark-line);
+  border-left-width: 4px; font-weight: 700;
+}
+.servers li.is-match .match-flag { font-weight: 700; }
+
+.mass[hidden] { display: none; }
+.day[hidden] { display: none; }
+
+/* ---------- Fuss ---------- */
+.contact {
+  margin-top: 36px; padding: 20px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius);
+}
+.contact p { margin: 0; }
+a { color: var(--accent); }
+.noscript {
+  border: 1px solid var(--border); background: var(--surface);
+  border-radius: var(--radius); padding: 14px 18px; margin-bottom: 24px;
+}
+.print-scope { display: none; }
+
+/* ---------- Mobil ---------- */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .wrap { padding: 22px 14px 56px; }
+  h1 { font-size: 1.55rem; }
+  .day-grid { grid-template-columns: 1fr; }
+  .filter-row { flex-direction: column; align-items: stretch; }
+  .field { min-width: 0; }
+  button { width: 100%; }
+}
+
+/* ---------- Druck ---------- */
+@media print {
+  :root { --bg: #fff; --surface: #fff; }
+  body { background: #fff; font-size: 11pt; }
+  .wrap { max-width: none; padding: 0; }
+  .filter, .noscript, .print-hide { display: none !important; }
+  .print-scope { display: block; font-weight: 700; margin: 0 0 14px; }
+  .notice { border: 1pt solid #000; background: #fff; color: #000; }
+  .badge { border: 1pt solid #666; background: #fff; color: #000; }
+  .day-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .day, .mass { break-inside: avoid; page-break-inside: avoid; }
+  .mass { border: 1pt solid #999; padding: 8px 10px; }
+  .servers li { border: 1pt solid #bbb; background: #fff; font-size: 10.5pt; }
+  .servers li.is-match { background: #fff; border-left: 3pt solid #000; }
+  .contact { border: 1pt solid #999; }
+  a { color: #000; text-decoration: underline; }
+}

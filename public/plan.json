@@ -1,0 +1,165 @@
+{
+  "title": "Ministrantenplan Oktober 2026",
+  "validFrom": "2026-10-01",
+  "validTo": "2026-10-31",
+  "timezone": "Europe/Vienna",
+  "planVersion": "1.0",
+  "status": "Entwurf – technisch validiert, organisatorisch noch nicht durch Anita Einsle freigegeben",
+  "updated": "2026-09-22",
+  "notice": "Ab Sonntag, 25. Oktober, beginnt die Abendmesse um 19:00 Uhr.",
+  "contact": {
+    "name": "Anita Einsle",
+    "email": "anita@einsle.at"
+  },
+  "services": [
+    {
+      "id": "G1",
+      "date": "2026-10-04",
+      "weekday": "Sonntag",
+      "time": "11:00",
+      "daypart": "Vormittagsmesse",
+      "familyMass": false,
+      "servers": [
+        "Lukas B.",
+        "Christina C.",
+        "Josef E.",
+        "Ella O.",
+        "Marie O.",
+        "Jakob R.",
+        "Remus S.",
+        "Vanessa V."
+      ]
+    },
+    {
+      "id": "G2",
+      "date": "2026-10-04",
+      "weekday": "Sonntag",
+      "time": "19:30",
+      "daypart": "Abendmesse",
+      "familyMass": false,
+      "servers": [
+        "Greta B.",
+        "Klara E.",
+        "Martha E.",
+        "Anna P.",
+        "Henriette W.",
+        "Matilda W."
+      ]
+    },
+    {
+      "id": "G3",
+      "date": "2026-10-11",
+      "weekday": "Sonntag",
+      "time": "11:00",
+      "daypart": "Vormittagsmesse",
+      "familyMass": false,
+      "servers": [
+        "Elisa E.",
+        "Lukas K.",
+        "Anna-Catharina M.",
+        "Emma O.",
+        "Katharina O.",
+        "Emilia S.",
+        "Marlena S.",
+        "Vanessa V."
+      ]
+    },
+    {
+      "id": "G4",
+      "date": "2026-10-11",
+      "weekday": "Sonntag",
+      "time": "19:30",
+      "daypart": "Abendmesse",
+      "familyMass": false,
+      "servers": [
+        "Felix B.",
+        "Magnus B.",
+        "Paulus C.",
+        "Vincent D.",
+        "Simon Johannes E.",
+        "Ferdinand S."
+      ]
+    },
+    {
+      "id": "G5",
+      "date": "2026-10-18",
+      "weekday": "Sonntag",
+      "time": "11:00",
+      "daypart": "Vormittagsmesse",
+      "familyMass": true,
+      "servers": [
+        "Annalena B.",
+        "Greta B.",
+        "Lara B.",
+        "Zita B.",
+        "Paulus C.",
+        "Vincent D.",
+        "Olivia E.",
+        "Simon Johannes E.",
+        "Clara K.",
+        "Emma K.",
+        "Magdalena M.",
+        "Ella O.",
+        "Emma O.",
+        "Katharina O.",
+        "Marie O.",
+        "Jakob R.",
+        "Emilia S.",
+        "Ferdinand S.",
+        "Ida S.",
+        "Marlena S.",
+        "Remus S."
+      ]
+    },
+    {
+      "id": "G6",
+      "date": "2026-10-18",
+      "weekday": "Sonntag",
+      "time": "19:30",
+      "daypart": "Abendmesse",
+      "familyMass": false,
+      "servers": [
+        "Lena B.",
+        "Loana K.",
+        "Nora K.",
+        "Anna P.",
+        "Henriette W.",
+        "Matilda W."
+      ]
+    },
+    {
+      "id": "G7",
+      "date": "2026-10-25",
+      "weekday": "Sonntag",
+      "time": "11:00",
+      "daypart": "Vormittagsmesse",
+      "familyMass": false,
+      "servers": [
+        "Lena B.",
+        "Lukas B.",
+        "Zita B.",
+        "Elisa E.",
+        "Josef E.",
+        "Olivia E.",
+        "Lukas K.",
+        "Anna-Catharina M."
+      ]
+    },
+    {
+      "id": "G8",
+      "date": "2026-10-25",
+      "weekday": "Sonntag",
+      "time": "19:00",
+      "daypart": "Abendmesse",
+      "familyMass": false,
+      "servers": [
+        "Klara E.",
+        "Martha E.",
+        "Clara K.",
+        "Emma K.",
+        "Loana K.",
+        "Nora K."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "_comment": "INTERN. Gottesdienste Oktober 2026, Zeitzone Europe/Vienna.",
+  "timezone": "Europe/Vienna",
+  "periodStart": "2026-10-01",
+  "periodEnd": "2026-10-31",
+  "services": [
+    {"id": "G1", "date": "2026-10-04", "time": "11:00", "daypart": "vormittag", "minServers": 8, "familyMass": false},
+    {"id": "G2", "date": "2026-10-04", "time": "19:30", "daypart": "abend",     "minServers": 6, "familyMass": false},
+    {"id": "G3", "date": "2026-10-11", "time": "11:00", "daypart": "vormittag", "minServers": 8, "familyMass": false},
+    {"id": "G4", "date": "2026-10-11", "time": "19:30", "daypart": "abend",     "minServers": 6, "familyMass": false},
+    {"id": "G5", "date": "2026-10-18", "time": "11:00", "daypart": "vormittag", "minServers": 8, "familyMass": true},
+    {"id": "G6", "date": "2026-10-18", "time": "19:30", "daypart": "abend",     "minServers": 6, "familyMass": false},
+    {"id": "G7", "date": "2026-10-25", "time": "11:00", "daypart": "vormittag", "minServers": 8, "familyMass": false},
+    {"id": "G8", "date": "2026-10-25", "time": "19:00", "daypart": "abend",     "minServers": 6, "familyMass": false}
+  ]
+}

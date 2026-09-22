@@ -1,0 +1,829 @@
+{
+  "_comment": "INTERN. Jede Regel hat eine Kennung, einen Quellenverweis und einen Status. Diese Datei wird NICHT veroeffentlicht.",
+  "planVersion": "1.0",
+  "rules": [
+    {
+      "id": "R-GLOBAL-MIN-VM",
+      "type": "service_min",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.1",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "payload": {
+        "daypart": "vormittag",
+        "min": 8
+      },
+      "note": "Ersetzt die fruehere Spanne 52-56 Gesamteinsaetze."
+    },
+    {
+      "id": "R-GLOBAL-MIN-AM",
+      "type": "service_min",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.1",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "payload": {
+        "daypart": "abend",
+        "min": 6
+      }
+    },
+    {
+      "id": "R-GLOBAL-NO-MAX",
+      "type": "service_max",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.1",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "payload": {
+        "max": null
+      },
+      "note": "Keine Hoechstzahl pro Messe, auch nicht bei der Familienmesse."
+    },
+    {
+      "id": "R-GLOBAL-MAX-MONTH",
+      "type": "person_max_month",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.1",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "payload": {
+        "max": 2
+      }
+    },
+    {
+      "id": "R-GLOBAL-STD-AVAIL",
+      "type": "default_availability",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.1",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "payload": {
+        "available": true
+      },
+      "note": "Gilt fuer Personen ohne Elternrueckmeldung: 'gemaess bestaetigter Standardregel verfuegbar', keine persoenliche Elternbestaetigung."
+    },
+    {
+      "id": "R-GLOBAL-ONE-PER-SUNDAY",
+      "type": "person_max_per_day",
+      "status": "planungsvorsicht",
+      "source": {
+        "file": "Auftrag Abschnitt 3.1.1 / 5",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Auftrag"
+      },
+      "payload": {
+        "max": 1
+      },
+      "note": "Zwei Dienste derselben Person am selben Sonntag werden zunaechst vermieden. Die gefundene Loesung benoetigt keine Ausnahme; eine Rueckfrage ist damit nicht erforderlich."
+    },
+    {
+      "id": "R-SVC-FAMILY",
+      "type": "service_flag",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 2 / 3.1",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "payload": {
+        "service": "G5",
+        "familyMass": true
+      },
+      "note": "Regulaere Vormittagsmesse des 18.10., kein zusaetzlicher neunter Gottesdienst."
+    },
+    {
+      "id": "R-SVC-LATE-OCT-TIME",
+      "type": "service_time",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 2",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Auftrag"
+      },
+      "payload": {
+        "service": "G8",
+        "time": "19:00"
+      },
+      "note": "Ab dem letzten Oktoberwochenende beginnt die Abendmesse um 19:00 Uhr."
+    },
+    {
+      "id": "R-01-KRAMER",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Miniplan Oktober Loana und Nora Kramer.pdf",
+        "page": 1,
+        "messageDate": "2026-09-20",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p21",
+        "p22"
+      ],
+      "payload": {
+        "services": [
+          "G3",
+          "G7"
+        ]
+      },
+      "note": "Original: 04.10. 11 Uhr ja, 11.10. 11 Uhr nein, 18.10. 11 Uhr ja, 25.10. 11 Uhr nein. Die Nein-Angaben sperren ausschliesslich 11:00 Uhr; fuer die Abendtermine gilt R-GLOBAL-STD-AVAIL. Keine Pflichtpaarung."
+    },
+    {
+      "id": "R-02-ZITA-ABSENT",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Miniplanung Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-21",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p03"
+      ],
+      "payload": {
+        "services": [
+          "G1",
+          "G2"
+        ],
+        "range": [
+          "2026-10-02",
+          "2026-10-04"
+        ]
+      },
+      "note": "Original: 'vermutlich das Wochenende 2.10.-4.10. in Graz. Da bitte nicht einteilen!' Die ausdrueckliche Sperre gilt trotz 'vermutlich'."
+    },
+    {
+      "id": "R-02-ZITA-VM",
+      "type": "daypart_only",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.1 / 3.2",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p03"
+      ],
+      "payload": {
+        "daypart": "vormittag"
+      }
+    },
+    {
+      "id": "R-03-OTTERSBACH",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Abwesenheiten Mini Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-19",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p27",
+        "p28"
+      ],
+      "payload": {
+        "services": [
+          "G7",
+          "G8"
+        ],
+        "range": [
+          "2026-10-24",
+          "2026-11-01"
+        ]
+      },
+      "note": "Herbstferienabwesenheit Familie Ottersbach, einschliesslich Anfang und Ende."
+    },
+    {
+      "id": "R-04-CHRISTINA",
+      "type": "allow_only_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- mini oktober christina.pdf",
+        "page": 1,
+        "messageDate": "2026-09-02",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p09"
+      ],
+      "payload": {
+        "services": [
+          "G1"
+        ]
+      },
+      "note": "Original: 'ministrieren fuer christina meinerseits nur am 4.10. moeglich.' Der bezweifelte Kalendereintrag 03.10. 11:00 ist kein Gottesdienst dieses Plans (03.10.2026 ist ein Samstag)."
+    },
+    {
+      "id": "R-05-BEREUTER",
+      "type": "allow_only_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- ministrieren oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-17",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p01",
+        "p02"
+      ],
+      "payload": {
+        "services": [
+          "G5"
+        ]
+      },
+      "note": "Original: 'die Maedchen koennen nur am 18.10. bei der Familienmesse ministrieren.'"
+    },
+    {
+      "id": "R-06-WOESS",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Ministrieren Oktober 2026.pdf",
+        "page": 1,
+        "messageDate": "2026-09-21",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p37",
+        "p38"
+      ],
+      "payload": {
+        "services": [
+          "G7",
+          "G8"
+        ],
+        "range": [
+          "2026-10-24",
+          "2026-11-01"
+        ]
+      },
+      "note": "Ausflugsanmeldung im selben Mail ist nicht planungsrelevant."
+    },
+    {
+      "id": "R-07-FERDINAND",
+      "type": "allow_only_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-20",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p35"
+      ],
+      "payload": {
+        "services": [
+          "G4",
+          "G5"
+        ]
+      },
+      "note": "Original: 'am 11. abends (gerne mit Felix) und am 18. bei der Familienmesse'."
+    },
+    {
+      "id": "R-08-SCHMIDGALL-BLOCK",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Mini-Dienst Oktober 2026.pdf",
+        "page": 1,
+        "messageDate": "2026-09-18",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p32",
+        "p33"
+      ],
+      "payload": {
+        "services": [
+          "G1",
+          "G2",
+          "G7",
+          "G8"
+        ],
+        "ranges": [
+          [
+            "2026-10-04",
+            "2026-10-05"
+          ],
+          [
+            "2026-10-25",
+            "2026-11-01"
+          ]
+        ]
+      },
+      "note": "Weitere Lektorentermine (08.11., 31.12., 03.01.27) liegen ausserhalb dieses Plans."
+    },
+    {
+      "id": "R-08-SCHMIDGALL-LEKTOR",
+      "type": "must_serve",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Mini-Dienst Oktober 2026.pdf",
+        "page": 1,
+        "messageDate": "2026-09-18",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung + Klarstellung Abschnitt 3.4"
+      },
+      "subjects": [
+        "p32",
+        "p33"
+      ],
+      "payload": {
+        "service": "G3"
+      },
+      "note": "Markus Schmidgall hat am 11.10. um 11:00 Uhr Lektorendienst."
+    },
+    {
+      "id": "R-09-GRETA",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Abwesenheit Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-21",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p04"
+      ],
+      "payload": {
+        "services": [
+          "G7",
+          "G8"
+        ]
+      },
+      "note": "Original: 'Im Oktober ist Greta am 25.10. nicht da, sonst sind wir flexibel.' Der mitzitierte aeltere Verteiler ist keine zusaetzliche Stammliste."
+    },
+    {
+      "id": "R-10-BRUNNER-ABSENT",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Ministrieren im Oktober .pdf",
+        "page": 1,
+        "messageDate": "2026-09-18",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p05",
+        "p06"
+      ],
+      "payload": {
+        "services": [
+          "G1",
+          "G2"
+        ]
+      },
+      "note": "Original: 'Am 4.10. sind wir nicht hier, sonst schon.'"
+    },
+    {
+      "id": "R-10-BRUNNER-EXACT",
+      "type": "exact_count_at",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.5",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p05",
+        "p06"
+      ],
+      "payload": {
+        "count": 1,
+        "service": "G4"
+      },
+      "note": "Felix und Magnus jeweils genau einmal im Oktober, abends, gemeinsam am 11.10. 19:30. Die fruehere Forderung nach zwei Magnus-Einsaetzen ist aufgehoben."
+    },
+    {
+      "id": "R-11-MAGDALENA",
+      "type": "allow_only_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Ministrieren .pdf",
+        "page": 1,
+        "messageDate": "2026-09-08",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p24"
+      ],
+      "payload": {
+        "services": [
+          "G5"
+        ]
+      },
+      "note": "Original: 'Magdalena kann im Oktober am 18. ministrieren.' Positive Meldung ohne 'nur'; weitere Tage werden gemaess Abschnitt 3.1.1 nur bei Bedarf geklaert. Bedarf ist nicht eingetreten."
+    },
+    {
+      "id": "R-12-OCVIRK",
+      "type": "allow_only_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Minieinteilung Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-21",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p25",
+        "p26"
+      ],
+      "payload": {
+        "services": [
+          "G3",
+          "G4",
+          "G5",
+          "G6"
+        ]
+      },
+      "note": "Original: 'Katharina und Emma koennen am 11. und 18. Oktober ministrieren.' Keine Uhrzeitbeschraenkung gemeldet, daher beide Messen dieser Tage. Keine Pflichtpaarung."
+    },
+    {
+      "id": "R-13-SEPTEMBER-HIST",
+      "type": "historic_preference",
+      "status": "historisch_inaktiv",
+      "source": {
+        "file": "WG- Ministrieren September .pdf",
+        "page": 1,
+        "messageDate": null,
+        "referenceMonth": "2026-09",
+        "origin": "Elternrueckmeldung September"
+      },
+      "subjects": [
+        "p05",
+        "p06"
+      ],
+      "payload": {},
+      "note": "Original: 'Felix wie immer am liebsten mit Ferdinand, Magnus mit den grossen Jungs.' Historische September-Quelle: begruendet keine Oktober-Verfuegbarkeit und keine Einsatzanzahl. Massgeblich sind R-20/R-19."
+    },
+    {
+      "id": "R-14-REMUS",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Minis Einteilung Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-18",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p31"
+      ],
+      "payload": {
+        "services": [
+          "G7",
+          "G8"
+        ],
+        "range": [
+          "2026-10-24",
+          "2026-11-02"
+        ]
+      },
+      "note": "Sperre gilt nur fuer Remus, nicht fuer Jakob Redl. Spaghetti-Essen nicht planungsrelevant."
+    },
+    {
+      "id": "R-15-KONZETT-MONTH",
+      "type": "source_correction",
+      "status": "bestaetigt",
+      "source": {
+        "file": "x-WG- Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-21",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung + Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p19",
+        "p20"
+      ],
+      "payload": {
+        "statedMonth": "November",
+        "confirmedMonth": "2026-10"
+      },
+      "note": "Betreff 'Oktober', Text 'bzgl. November'. Der Auftraggeber hat Oktober ausdruecklich bestaetigt; 'November' ist eine geklaerte Falschangabe und keine aktive Planungsvorgabe."
+    },
+    {
+      "id": "R-16-ANNA-P",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "WG- Anna ministrieren.pdf",
+        "page": 1,
+        "messageDate": "2026-09-17",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung"
+      },
+      "subjects": [
+        "p29"
+      ],
+      "payload": {
+        "services": [
+          "G7",
+          "G8"
+        ]
+      },
+      "note": "Original: 'bitte nur bis 24.10. einteilen.' Nicht mit Annalena Bereuter oder Anna-Catharina Meusburger verwechseln."
+    },
+    {
+      "id": "R-17-OLIVIA",
+      "type": "block_services",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.2",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p17"
+      ],
+      "payload": {
+        "services": [
+          "G1",
+          "G2"
+        ]
+      },
+      "note": "Olivia nicht beim ersten Termin; da sie zusaetzlich nur vormittags darf, ist sie am 04.10. vollstaendig uneingeteilt."
+    },
+    {
+      "id": "R-18-VM-ONLY",
+      "type": "daypart_only",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.2",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p01",
+        "p02",
+        "p03",
+        "p09",
+        "p17",
+        "p24",
+        "p27",
+        "p28"
+      ],
+      "payload": {
+        "daypart": "vormittag"
+      }
+    },
+    {
+      "id": "R-18-AM-ONLY",
+      "type": "daypart_only",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.2",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p13",
+        "p14"
+      ],
+      "payload": {
+        "daypart": "abend"
+      },
+      "note": "Klara und Martha Einsle. Eine gemeinsame Einteilung ist nicht vorgeschrieben."
+    },
+    {
+      "id": "R-19-MAGNUS-GROUP",
+      "type": "group_with_directed",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.5",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p06"
+      ],
+      "payload": {
+        "companions": [
+          "p10",
+          "p11",
+          "p16"
+        ]
+      },
+      "note": "Magnus muss gemeinsam mit Paulus Cukrowicz, Vincent Dressel und Simon Johannes Ernst dienen. Gerichtet: die drei duerfen einen weiteren Einsatz ohne Magnus uebernehmen."
+    },
+    {
+      "id": "R-20-FELIX-GROUP",
+      "type": "group_with_directed",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.5",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "subjects": [
+        "p05"
+      ],
+      "payload": {
+        "companions": [
+          "p35",
+          "p06"
+        ]
+      },
+      "note": "Beide Felix-Paarbedingungen werden in derselben Messe erfuellt. Es gibt keine eigenstaendige Magnus-Ferdinand-Pflicht."
+    },
+    {
+      "id": "R-21-PAIRS",
+      "type": "pair_bound",
+      "status": "bestaetigt",
+      "source": {
+        "file": "Auftrag Abschnitt 3.3",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Klarstellung Auftraggeber"
+      },
+      "payload": {
+        "pairs": [
+          [
+            "p01",
+            "p02"
+          ],
+          [
+            "p19",
+            "p20"
+          ],
+          [
+            "p32",
+            "p33"
+          ],
+          [
+            "p34",
+            "p24"
+          ],
+          [
+            "p37",
+            "p38"
+          ]
+        ]
+      },
+      "note": "Beidseitig und jeweils innerhalb derselben Messe. Aus gemeinsamem Nachnamen allein folgt keine Bindung (Kramer, Ottersbach, Ocvirk sind nicht gebunden)."
+    },
+    {
+      "id": "R-22-IDA-DERIVED",
+      "type": "derived_daypart",
+      "status": "abgeleitet",
+      "source": {
+        "file": "Auftrag Abschnitt 3.3",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Ableitung aus R-21-PAIRS + R-18-VM-ONLY"
+      },
+      "subjects": [
+        "p34"
+      ],
+      "payload": {
+        "daypart": "vormittag"
+      },
+      "note": "Ida Seitner ist ueber die Bindung an Magdalena Mueller-Rupp auf 11:00 Uhr beschraenkt. Ida selbst hat keine Rueckmeldung; es gilt sonst R-GLOBAL-STD-AVAIL."
+    },
+    {
+      "id": "P-01-REDL-SCHARINGER",
+      "type": "preference_together",
+      "status": "wunsch",
+      "source": {
+        "file": "Auftrag Abschnitt 3.6",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Auftrag"
+      },
+      "payload": {
+        "people": [
+          "p30",
+          "p31"
+        ]
+      },
+      "note": "Jakob Redl moeglichst gemeinsam mit Remus Scharinger."
+    },
+    {
+      "id": "P-02-LARA-OLIVIA",
+      "type": "preference_together_at",
+      "status": "wunsch",
+      "source": {
+        "file": "Auftrag Abschnitt 3.6",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Auftrag"
+      },
+      "payload": {
+        "people": [
+          "p02",
+          "p17"
+        ],
+        "service": "G5"
+      },
+      "note": "Lara moeglichst einmal gemeinsam mit Olivia; passender Termin 18.10. 11:00. Annalena ist wegen R-21-PAIRS ebenfalls dabei."
+    },
+    {
+      "id": "P-03-KONZETT-WISH",
+      "type": "preference_assign",
+      "status": "wunsch",
+      "source": {
+        "file": "x-WG- Oktober.pdf",
+        "page": 1,
+        "messageDate": "2026-09-21",
+        "referenceMonth": "2026-10",
+        "origin": "Elternrueckmeldung, Monat geklaert via R-15"
+      },
+      "subjects": [
+        "p19",
+        "p20"
+      ],
+      "payload": {
+        "services": [
+          "G5",
+          "G8"
+        ]
+      },
+      "note": "Clara am 18. um 11:00 genannt; beide am 25. um 19:00. Die Alleinnennung Claras ist keine Emma-Sperre; Paarbindung bleibt zwingend."
+    },
+    {
+      "id": "P-04-FAMILY-MAX",
+      "type": "preference_maximise",
+      "status": "wunsch",
+      "source": {
+        "file": "Auftrag Abschnitt 3.6",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Auftrag"
+      },
+      "payload": {
+        "service": "G5"
+      },
+      "note": "Moeglichst alle geeigneten und verfuegbaren Kinder in der Familienmesse. Abendgebundene Personen (Klara, Martha, Felix, Magnus) gehoeren nicht zur geeigneten Gruppe."
+    },
+    {
+      "id": "P-05-FAIRNESS",
+      "type": "preference_fairness",
+      "status": "wunsch",
+      "source": {
+        "file": "Auftrag Abschnitt 3.6",
+        "page": null,
+        "referenceMonth": "2026-10",
+        "origin": "Auftrag"
+      },
+      "payload": {},
+      "note": "Moeglichst gleichmaessige Verteilung der Einsaetze innerhalb aller Pflichtregeln."
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "Q-01",
+      "status": "erledigt",
+      "text": "Die fotografierte Ministrantenliste (IMG_7123) wurde nachgereicht und mit der Stammliste abgeglichen: 38 Namen, identische Reihenfolge und Schreibweisen, keine zusaetzliche Person.",
+      "impact": "keine"
+    },
+    {
+      "id": "Q-02",
+      "status": "offen_nicht_planungsrelevant",
+      "text": "Das Foto IMG_6746.jpeg (Uebersicht der 16 PDF-Dateien) liegt nicht vor. Die Vollstaendigkeit der 16 Rueckmeldungen wurde stattdessen gegen das Verzeichnis input/plan-sept-2026 geprueft: genau 16 PDFs, alle in Abschnitt 4 gelistet und einzeln ausgewertet.",
+      "impact": "keine Auswirkung auf den Plan"
+    }
+  ]
+}

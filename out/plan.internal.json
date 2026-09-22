@@ -1,0 +1,370 @@
+{
+  "_comment": "INTERN. Erzeugt von src/generate.py. Nicht veroeffentlichen.",
+  "planVersion": "1.0",
+  "generatedAt": "2026-09-22T20:41:18+02:00",
+  "generator": "src/generate.py (deterministische vollstaendige Tiefensuche, kein Zufall)",
+  "timezone": "Europe/Vienna",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-31"
+  },
+  "familyMassSize": 21,
+  "preferencesSatisfied": {
+    "P-01-REDL-SCHARINGER": true,
+    "P-02-LARA-OLIVIA": true,
+    "P-03-KONZETT-WISH": true
+  },
+  "searchLog": [
+    {
+      "step": "|G5| >= 33",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 32",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 31",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 30",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 29",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 28",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 27",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 26",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 25",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 24",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 23",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 22",
+      "status": "unloesbar",
+      "info": "Suchraum vollstaendig durchsucht, keine Loesung"
+    },
+    {
+      "step": "|G5| >= 21",
+      "status": "loesung",
+      "info": null
+    },
+    {
+      "step": "Wunsch P-03-KONZETT-WISH",
+      "status": "erfuellbar"
+    },
+    {
+      "step": "Wunsch P-02-LARA-OLIVIA",
+      "status": "erfuellbar"
+    },
+    {
+      "step": "Wunsch P-01-REDL-SCHARINGER",
+      "status": "erfuellbar"
+    }
+  ],
+  "assignments": {
+    "G1": [
+      "p08",
+      "p09",
+      "p12",
+      "p27",
+      "p28",
+      "p30",
+      "p31",
+      "p36"
+    ],
+    "G2": [
+      "p04",
+      "p13",
+      "p14",
+      "p29",
+      "p37",
+      "p38"
+    ],
+    "G3": [
+      "p15",
+      "p18",
+      "p23",
+      "p25",
+      "p26",
+      "p32",
+      "p33",
+      "p36"
+    ],
+    "G4": [
+      "p05",
+      "p06",
+      "p10",
+      "p11",
+      "p16",
+      "p35"
+    ],
+    "G5": [
+      "p01",
+      "p02",
+      "p03",
+      "p04",
+      "p10",
+      "p11",
+      "p16",
+      "p17",
+      "p19",
+      "p20",
+      "p24",
+      "p25",
+      "p26",
+      "p27",
+      "p28",
+      "p30",
+      "p31",
+      "p32",
+      "p33",
+      "p34",
+      "p35"
+    ],
+    "G6": [
+      "p07",
+      "p21",
+      "p22",
+      "p29",
+      "p37",
+      "p38"
+    ],
+    "G7": [
+      "p03",
+      "p07",
+      "p08",
+      "p12",
+      "p15",
+      "p17",
+      "p18",
+      "p23"
+    ],
+    "G8": [
+      "p13",
+      "p14",
+      "p19",
+      "p20",
+      "p21",
+      "p22"
+    ]
+  },
+  "assignmentsByPerson": {
+    "p01": [
+      "G5"
+    ],
+    "p02": [
+      "G5"
+    ],
+    "p03": [
+      "G5",
+      "G7"
+    ],
+    "p04": [
+      "G2",
+      "G5"
+    ],
+    "p05": [
+      "G4"
+    ],
+    "p06": [
+      "G4"
+    ],
+    "p07": [
+      "G6",
+      "G7"
+    ],
+    "p08": [
+      "G1",
+      "G7"
+    ],
+    "p09": [
+      "G1"
+    ],
+    "p10": [
+      "G4",
+      "G5"
+    ],
+    "p11": [
+      "G4",
+      "G5"
+    ],
+    "p12": [
+      "G1",
+      "G7"
+    ],
+    "p13": [
+      "G2",
+      "G8"
+    ],
+    "p14": [
+      "G2",
+      "G8"
+    ],
+    "p15": [
+      "G3",
+      "G7"
+    ],
+    "p16": [
+      "G4",
+      "G5"
+    ],
+    "p17": [
+      "G5",
+      "G7"
+    ],
+    "p18": [
+      "G3",
+      "G7"
+    ],
+    "p19": [
+      "G5",
+      "G8"
+    ],
+    "p20": [
+      "G5",
+      "G8"
+    ],
+    "p21": [
+      "G6",
+      "G8"
+    ],
+    "p22": [
+      "G6",
+      "G8"
+    ],
+    "p23": [
+      "G3",
+      "G7"
+    ],
+    "p24": [
+      "G5"
+    ],
+    "p25": [
+      "G3",
+      "G5"
+    ],
+    "p26": [
+      "G3",
+      "G5"
+    ],
+    "p27": [
+      "G1",
+      "G5"
+    ],
+    "p28": [
+      "G1",
+      "G5"
+    ],
+    "p29": [
+      "G2",
+      "G6"
+    ],
+    "p30": [
+      "G1",
+      "G5"
+    ],
+    "p31": [
+      "G1",
+      "G5"
+    ],
+    "p32": [
+      "G3",
+      "G5"
+    ],
+    "p33": [
+      "G3",
+      "G5"
+    ],
+    "p34": [
+      "G5"
+    ],
+    "p35": [
+      "G4",
+      "G5"
+    ],
+    "p36": [
+      "G1",
+      "G3"
+    ],
+    "p37": [
+      "G2",
+      "G6"
+    ],
+    "p38": [
+      "G2",
+      "G6"
+    ]
+  },
+  "counts": {
+    "p01": 1,
+    "p02": 1,
+    "p03": 2,
+    "p04": 2,
+    "p05": 1,
+    "p06": 1,
+    "p07": 2,
+    "p08": 2,
+    "p09": 1,
+    "p10": 2,
+    "p11": 2,
+    "p12": 2,
+    "p13": 2,
+    "p14": 2,
+    "p15": 2,
+    "p16": 2,
+    "p17": 2,
+    "p18": 2,
+    "p19": 2,
+    "p20": 2,
+    "p21": 2,
+    "p22": 2,
+    "p23": 2,
+    "p24": 1,
+    "p25": 2,
+    "p26": 2,
+    "p27": 2,
+    "p28": 2,
+    "p29": 2,
+    "p30": 2,
+    "p31": 2,
+    "p32": 2,
+    "p33": 2,
+    "p34": 1,
+    "p35": 2,
+    "p36": 2,
+    "p37": 2,
+    "p38": 2
+  }
+}
