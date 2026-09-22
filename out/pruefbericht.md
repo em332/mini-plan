@@ -3,8 +3,8 @@
 INTERN. Nicht veroeffentlichen. Enthaelt vollstaendige Namen und Quellenbezuege.
 
 - Planversion: 1.0
-- Erzeugt: 2026-09-22T20:41:18+02:00
-- Bericht erstellt: 2026-09-22T21:10:09+02:00
+- Erzeugt: 2026-09-22T22:01:22+02:00
+- Bericht erstellt: 2026-09-22T22:01:23+02:00
 - Zeitzone: Europe/Vienna
 - Status: technisch validiert, organisatorisch NICHT freigegeben (keine Freigabe durch Anita Einsle eingeholt)
 
@@ -216,9 +216,12 @@ Aussermonatliche und widerspruechliche Aussagen:
 
 | Pruefung | Aufruf | Ergebnis |
 | --- | --- | --- |
-| Fachliche Regeln und oeffentlicher Export (Python) | `python3 -m unittest discover -s tests -t .` | 75 Tests bestanden |
+| Fachliche Regeln und oeffentlicher Export (Python) | `python3 -m unittest discover -s tests -t .` | 85 Tests bestanden |
 | Bedienung des Namensfilters (Node/jsdom) | `node --test tests/test_ui.mjs` | 19 Tests bestanden |
 | Unabhaengige Planvalidierung | `python3 src/validate.py` | 0 Fehler, 3 Hinweise |
+| Visuelle Browserpruefung (Smartphone-/Desktopbreite, Druckvorschau) | manuell im Browser | **NICHT AUSGEFUEHRT** |
+
+Die Layout- und Druckvorgaben sind statisch geprueft (HTML-Struktur, Breakpoint, Umbruchregeln, Druckstilblock) und die Filterbedienung ist im DOM getestet. Eine visuelle Pruefung in einem echten Browser bei Smartphone- und Desktopbreite konnte in dieser Umgebung nicht durchgefuehrt werden und steht aus.
 
 ## 10. Offene Punkte
 
@@ -226,5 +229,6 @@ Aussermonatliche und widerspruechliche Aussagen:
 - **Q-02 (offen_nicht_planungsrelevant)**: Das Foto IMG_6746.jpeg (Uebersicht der 16 PDF-Dateien) liegt nicht vor. Die Vollstaendigkeit der 16 Rueckmeldungen wurde stattdessen gegen das Verzeichnis input/plan-sept-2026 geprueft: genau 16 PDFs, alle in Abschnitt 4 gelistet und einzeln ausgewertet. _Auswirkung: keine Auswirkung auf den Plan_
 - Die oeffentliche Darstellung "Vorname + Nachnamensinitiale" ist eine reduzierte Namensdarstellung, keine Anonymisierung. Ein Zugangsschutz ist nicht eingerichtet; `noindex` und der Namensfilter ersetzen ihn nicht.
 - Die Kontaktangabe "Anita Einsle / anita@einsle.at" ist laut Auftrag zur Anzeige vorgesehen und nennt damit den Nachnamen, den auch Klara E. und Martha E. tragen.
+- Die visuelle Browserpruefung bei Smartphone- und Desktopbreite sowie die Druckvorschau stehen aus; sie sind vor der Veroeffentlichung nachzuholen (besonders die Familienmesse mit 21 Namen).
 - Der Plan ist technisch validiert, aber organisatorisch nicht freigegeben.
 

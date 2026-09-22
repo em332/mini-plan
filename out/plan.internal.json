@@ -1,7 +1,7 @@
 {
   "_comment": "INTERN. Erzeugt von src/generate.py. Nicht veroeffentlichen.",
   "planVersion": "1.0",
-  "generatedAt": "2026-09-22T20:41:18+02:00",
+  "generatedAt": "2026-09-22T22:01:22+02:00",
   "generator": "src/generate.py (deterministische vollstaendige Tiefensuche, kein Zufall)",
   "timezone": "Europe/Vienna",
   "period": {

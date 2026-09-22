@@ -218,6 +218,14 @@ def main():
          else "FEHLGESCHLAGEN: %s" % tail(out_ui, 3)))
     a("| Unabhaengige Planvalidierung | `python3 src/validate.py` | "
       "%d Fehler, %d Hinweise |" % (len(errors), len(notes)))
+    a("| Visuelle Browserpruefung (Smartphone-/Desktopbreite, Druckvorschau) | "
+      "manuell im Browser | **NICHT AUSGEFUEHRT** |")
+    a("")
+    a("Die Layout- und Druckvorgaben sind statisch geprueft (HTML-Struktur, "
+      "Breakpoint, Umbruchregeln, Druckstilblock) und die Filterbedienung ist "
+      "im DOM getestet. Eine visuelle Pruefung in einem echten Browser bei "
+      "Smartphone- und Desktopbreite konnte in dieser Umgebung nicht "
+      "durchgefuehrt werden und steht aus.")
     a("")
 
     a("## 10. Offene Punkte")
@@ -230,6 +238,9 @@ def main():
     a("- Die Kontaktangabe \"Anita Einsle / anita@einsle.at\" ist laut Auftrag zur "
       "Anzeige vorgesehen und nennt damit den Nachnamen, den auch Klara E. und "
       "Martha E. tragen.")
+    a("- Die visuelle Browserpruefung bei Smartphone- und Desktopbreite sowie die "
+      "Druckvorschau stehen aus; sie sind vor der Veroeffentlichung nachzuholen "
+      "(besonders die Familienmesse mit 21 Namen).")
     a("- Der Plan ist technisch validiert, aber organisatorisch nicht freigegeben.")
     a("")
 
